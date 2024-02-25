@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Build files
+build/
+dist/
+*.log
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Yarn integrity file
+.yarn-integrity
+
+# Jest coverage directory
+coverage/
+
+# npm debug log
+npm-debug.log*
