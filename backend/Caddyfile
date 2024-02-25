@@ -1,0 +1,9 @@
+localhost:443 {
+    reverse_proxy localhost:3001 {
+        header_down Access-Control-Allow-Origin "*"
+        header_down Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+        header_down Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+        header_down Access-Control-Allow-Credentials true
+    }
+}
+

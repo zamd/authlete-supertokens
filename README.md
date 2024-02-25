@@ -36,3 +36,30 @@ const defaultBackend = createDefaultBackend(authenticationHandler);
 
 // Mount backend on the app
 app.use(defaultBackend);
+
+```
+
+## Important Note
+
+Authlete requires the `redirect_uri` to use HTTPS. Even localhost without HTTPS is not allowed. Therefore, to run the Authlete sample, we need to set up a reverse proxy like Caddy.
+
+### Installation Instructions for Caddy:
+
+#### macOS (Homebrew)
+
+```bash
+brew install caddy
+```
+
+### Running Caddy with Proxy Configuration:
+
+Ensure that you have a `Caddyfile` configured properly in the same directory where you'll run Caddy.
+
+#### Command to Run Caddy:
+
+```bash
+caddy run
+```
+
+This setup will proxy `https://localhost` to the backend server, allowing the Authlete sample to run with the required HTTPS redirect URI.
+```
