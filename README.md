@@ -6,6 +6,9 @@ This repository demonstrates how to integrate Authlete, an "Identity Component a
 
 The sample project showcases the integration of Authlete with Supertokens using the Authlete Node SDK. The SDK facilitates easy integration into the Node.js Express framework.
 
+![image](https://github.com/zamd/authlete-supertokens/assets/1377205/1e7382a7-9731-481d-b071-8c34d67e1d93)
+
+
 ### Prerequisites
 
 Before running the sample, ensure you have the following installed:
